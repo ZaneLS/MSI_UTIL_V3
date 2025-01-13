@@ -1,0 +1,3 @@
+Start it as Administrator > Select your GPU (example RTX 3060) > see "Interrupt priority" and click on "Undefined" > set it as High > restart your PC
+
+(MAKE SURE YOUR GPU HAVE "Linebased, Msi" in "SUPPORTED MODES", and again there's videos about it so make sure to watch them)
