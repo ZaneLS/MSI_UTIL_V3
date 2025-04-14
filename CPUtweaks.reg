@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\75b0ae3f-bce0-45a7-8c89-c9611c25e100]
+"Attributes"=dword:00000002
+"Affinity"=dword:00000000
+"Background Only"="False"
+"Clock Rate"=dword:00010000
+"GPU Priority"=dword:00000008
+"Priority"=dword:00000006
+"Scheduling Category"="High"
+"SFIO Priority"="High"
+"BackgroundPriority"=dword:00000000
+"Latency Sensitive"="True"
