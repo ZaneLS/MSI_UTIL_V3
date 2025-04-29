@@ -119,3 +119,5 @@ cls
 echo Done!
 timeout /t 5 /nobreak > NUL
 pause
+
+exit
