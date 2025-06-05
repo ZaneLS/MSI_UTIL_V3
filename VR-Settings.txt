@@ -1,6 +1,6 @@
 Oculus Debug Tool
 
-PC ASW Disabled (can cause problems on AMD GPU)
+PC ASW Disabled (can cause problems on AMD GPU) (only disable if you have a high-end system)
 Video Codec Only H.264/Default (never use H.265 On Q2-Q3) (Screen Stuttering (?)
 Debug HMD Disabled
 Frame Drop Depends on user
