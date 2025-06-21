@@ -38,4 +38,5 @@ Write-Host "-Tessellation Mode (optimized by amd)"
 Write-Host "-Maximum Tessellation Level (off)"
 Write-Host "-OpenGL Triple Buffering (off)"
 Write-Host "-10-Bit Pixel Format (off)"
+Write-Host "Please note that those settings can cause problems on some games"
 $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
