@@ -1,3 +1,45 @@
+title OptiClub V6.2 -https://discord.gg/Np77z4C9qs -Automatic AfterInstall Script
+
+color b
+
+@echo off 
+
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "EnableLUA" /t REG_DWORD /d "0" /f 
+
+
+echo Checking for Administrative Privelages...
+timeout /t 3 /nobreak > NUL
+IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
+>nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
+) ELSE (
+>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+)
+
+if '%errorlevel%' NEQ '0' (
+    goto UACPrompt
+) else ( goto GotAdmin )
+
+:UACPrompt
+    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+    set params= %*
+    echo UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %params:"=""%", "", "runas", 1 >> "%temp%\getadmin.vbs"
+
+    "%temp%\getadmin.vbs"
+    del "%temp%\getadmin.vbs"
+    exit /B
+
+:GotAdmin
+    pushd "%CD%"
+    CD /D "%~dp0"
+	
+	
+chcp 65001 >nul
+Reg.exe add "HKCU\CONSOLE" /v "VirtualTerminalLevel" /t REG_DWORD /d "1" /f
+color b
+
+goto Script
+
+:script
 color b
 echo Optimizing Performances
 REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects" /v "VisualFXSetting" /t REG_DWORD /d 2 /f
