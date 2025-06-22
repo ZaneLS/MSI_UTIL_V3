@@ -1,8 +1,8 @@
+@echo off 
+
 title OptiClub V6.2 -https://discord.gg/Np77z4C9qs -Automatic AfterInstall Script
 
 color b
-
-@echo off 
 
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "EnableLUA" /t REG_DWORD /d "0" /f 
 
