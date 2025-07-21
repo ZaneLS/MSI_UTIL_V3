@@ -1,0 +1,32 @@
+Oculus Debug Tool
+
+PC ASW Disabled (can cause problems on AMD GPU) (only disable if you have a high-end system)
+Video Codec Only H.264/Default (never use H.265 On Q2-Q3) (Screen Stuttering (?)
+Debug HMD Disabled
+Frame Drop Depends on user
+Adaptive GPU Performance Scale Default/Off (Depends on user)
+Bypass Proximity Sensor check Off (?)
+Pose Injection (?)
+Distortion Curv. Default
+Sliced Encoding: Off
+Link Sharpening: Off
+
+echo Disabling PC Asynchronous Spacewarp for Oculus PCVR
+reg.exe add "HKLM\SOFTWARE\Oculus" /v "AswDisabled" /t REG_DWORD /d "1" /f
+timeout /t 1 /nobreak > NUL
+echo Setting "vrmonitor.exe" Priority. (Steam)
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\vrmonitor.exe\PerfOptions" /v "CpuPriorityClass" /t REG_DWORD /d "5" /f
+timeout /t 1 /nobreak > NUL
+echo Setting "vrdashboard.exe" Priority. (Steam)
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\vrdashboard.exe\PerfOptions" /v "CpuPriorityClass" /t REG_DWORD /d "5" /f
+echo Setting VRC Priority as High (vrchat.exe)
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\VRChat.exe\PerfOptions" "CpuPriorityClass" /t REG_DWORD /d "3" /f
+
+Overall AMD Drivers Settings  (Not for VR-Only)
+
+Radeon FreeSync : Optimised by AMD
+Texture Filtrage : Performances
+Tessellation Mode : Optimised by AMD
+
+Steam "Flags-Start" Settings (on VRC)
+--enable-hw-video-decoding --process-priority=2 --main-thread-priority=2 --disable-amd-stutter-workaround
