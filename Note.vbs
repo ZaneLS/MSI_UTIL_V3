@@ -1,0 +1,5 @@
+variable=msgbox ("Hello, Thanks for using",0+64,"OptiClub V6.5")
+variable=msgbox ("Please note that using this script MIGHT make a few things slower, like Steam, Meta Quest Link Startup load, and maybe Discord",0+64,"OptiClub V6.5")
+variable=msgbox ("If you experience problems, report it on the discord",0+64,"OptiClub V6.5")
+variable=msgbox ("Most common problem for now is that Meta Quest Link is slow on startup, wait at least 5 minutes, if it doesn't start after a few minutes, report it to us and we will look into it",0+64,"OptiClub V6.5")
+variable=msgbox ("Please! If you experience FPS loss in VR Games (Specifically, VRCHAT) or the game just crash after 15minutes or 1hour in game, Report it to us, we're already on our third fix for that",0+64,"OptiClub V6.5")
