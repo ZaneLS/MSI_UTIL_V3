@@ -1,0 +1,312 @@
+{
+ "$description": "Rulesets for Process Lasso",
+ "$schema": "https://bitsum.com/json-schemas/2025-02-12-00/schema",
+ "$title": "Process Lasso Rules",
+ "cpuAffinityRuleOrder": [
+  "vrchat.exe",
+  "javaw.exe",
+  "msi-kombustor-x64.exe"
+ ],
+ "cpuModel": "13th Gen Intel(R) Core(TM) i5-13600KF",
+ "cpuSetsRuleOrder": [
+  "javaw.exe"
+ ],
+ "gpuPriorityClassRuleOrder": [
+  "svchost.exe",
+  "discordptb.exe",
+  "discordcanary.exe",
+  "msedgewebview2.exe",
+  "discord.exe",
+  "javaw.exe",
+  "msi-kombustor-x64.exe",
+  "vrchat.exe"
+ ],
+ "ioPriorityClassRuleOrder": [
+  "vrchat.exe",
+  "javaw.exe"
+ ],
+ "memoryPriorityRuleOrder": [
+  "discord.exe",
+  "vrchat.exe",
+  "javaw.exe"
+ ],
+ "priorityClassRuleOrder": [
+  "atieclxx.exe",
+  "Client-Win64-Shipping.exe",
+  "cncmd.exe",
+  "Content Warning.exe",
+  "ContentWarning.exe",
+  "cs2.exe",
+  "cstrike.exe",
+  "cstrike_win64.exe",
+  "discord.exe",
+  "discordcanary.exe",
+  "discordptb.exe",
+  "Fragsurf.exe",
+  "GenshinImpact.exe",
+  "hl2.exe",
+  "hoi4.exe",
+  "javaw.exe",
+  "Lethal Company.exe",
+  "LethalCompany.exe",
+  "lsass.exe",
+  "msedgewebview2.exe",
+  "PhotosApp.exe",
+  "PhotosService.exe",
+  "ReadyOrNot-Win64-Shipping.exe",
+  "roblox.exe",
+  "RobloxPlayerBeta.exe",
+  "SearchIndexer.exe",
+  "steam.exe",
+  "steamwebhelper.exe",
+  "svchost.exe",
+  "TextInputHost.exe",
+  "TrustedInstaller.exe",
+  "VALORANT-Win64-Shipping.exe",
+  "VALORANT.exe",
+  "Video.UI.exe",
+  "VRChat.exe",
+  "vrdashboard.exe",
+  "vrmonitor.exe",
+  "wallpaper32.exe",
+  "wuauclt.exe",
+  "WutheringWave.exe",
+  "ZenlessZoneZero.exe"
+ ],
+ "ruleSets": [
+  {
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "atieclxx.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "client-win64-shipping.exe"
+  },
+  {
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "cncmd.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "content warning.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "contentwarning.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "cs2.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "cstrike.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "cstrike_win64.exe"
+  },
+  {
+   "gpuPriority": "Normale",
+   "memoryPriority": "Inférieure à la normale",
+   "memoryPriorityEnforcedByRegistry": false,
+   "priorityClass": "Normale",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "discord.exe"
+  },
+  {
+   "gpuPriority": "Normale",
+   "priorityClass": "Normale",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "discordcanary.exe"
+  },
+  {
+   "gpuPriority": "Normale",
+   "priorityClass": "Normale",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "discordptb.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "fragsurf.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "genshinimpact.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "hl2.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "hoi4.exe"
+  },
+  {
+   "cpuAffinity": "0-19",
+   "cpuAffinityDelay": 0,
+   "cpuSets": "(0-19)",
+   "gpuPriority": "Haute",
+   "ioPriority": "Haute",
+   "ioPriorityEnforcedByRegistry": false,
+   "memoryPriority": "Normale",
+   "memoryPriorityEnforcedByRegistry": false,
+   "performanceMode": true,
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "javaw.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "lethal company.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "lethalcompany.exe"
+  },
+  {
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "lsass.exe"
+  },
+  {
+   "gpuPriority": "Basse",
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "msedgewebview2.exe"
+  },
+  {
+   "cpuAffinity": "0-19",
+   "cpuAffinityDelay": 0,
+   "gpuPriority": "Haute",
+   "processName": "msi-kombustor-x64.exe"
+  },
+  {
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "photosapp.exe"
+  },
+  {
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "photosservice.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "readyornot-win64-shipping.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "roblox.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "robloxplayerbeta.exe"
+  },
+  {
+   "priorityClass": "Inférieure à la normale",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "searchindexer.exe"
+  },
+  {
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "steam.exe"
+  },
+  {
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "steamwebhelper.exe"
+  },
+  {
+   "gpuPriority": "Basse",
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "svchost.exe"
+  },
+  {
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "textinputhost.exe"
+  },
+  {
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "trustedinstaller.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "valorant-win64-shipping.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "valorant.exe"
+  },
+  {
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "video.ui.exe"
+  },
+  {
+   "cpuAffinity": "0-19",
+   "cpuAffinityDelay": 0,
+   "gpuPriority": "Haute",
+   "ioPriority": "Haute",
+   "ioPriorityEnforcedByRegistry": false,
+   "memoryPriority": "Normale",
+   "memoryPriorityEnforcedByRegistry": false,
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "vrchat.exe"
+  },
+  {
+   "priorityClass": "Inférieure à la normale",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "vrdashboard.exe"
+  },
+  {
+   "priorityClass": "Inférieure à la normale",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "vrmonitor.exe"
+  },
+  {
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "wallpaper32.exe"
+  },
+  {
+   "priorityClass": "Basse",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "wuauclt.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "wutheringwave.exe"
+  },
+  {
+   "priorityClass": "Haute",
+   "priorityClassEnforcedByRegistry": true,
+   "processName": "zenlesszonezero.exe"
+  }
+ ]
+}
