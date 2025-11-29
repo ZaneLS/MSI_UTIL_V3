@@ -1,0 +1,6 @@
+// | Disabling the TCP selective acknowledgments (SACK) option can improve CPU utilization by reducing the processing overhead associated with tracking and handling out-of-order packets.
+// | This optimization is recommended for systems where CPU efficiency is prioritized over potential performance gains from SACK in lossy network conditions.
+
+// | However, it is important to note that disabling SACK may negatively impact performance in environments with packet loss, as it reduces the efficiency of retransmission recovery.
+// | While SACK is generally beneficial and widely supported, it may be disabled on low-power devices not involved in bulk data transfers.
+// | The decision to disable SACK should consider the specific network environment and workload characteristics.
